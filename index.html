@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assest/style.css">
+    <title>Arreglos JS</title>
+</head>
+<body id="html">
+    <section class="container-fluid">
+        <h1>Todo List</h1>
+        
+        <p>Tareas Del dia:</p>
+        <div>
+            <div class="row">
+                <div class="col"><input class="w-100"id="inptTarea" type="text" placeholder="Ingrese aqui una nueva tarea"></div>
+                <div class="col"><button id="btnTarea" class="btn btn-success">Agregar</button></div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between"></div>
+        <div class="d-flex flex-column m-4">
+                <p>Total Tareas: <span id="spanTotal">1</span></p>
+                <p>Tareas Realizadas:<span id="spanFinalizadas">1</p>
+            </div>
+        <table class="text-center table table-hover">
+            <tr><th class="table-info">ID</th><th class="table-info">Tarea</th><th class="table-info">Status</th></tr>
+            <i class="fa-solid fa-xmark" onclick="dones"></i>
+            <tbody id="tbodyTareas"></tbody>
+            </tbody>
+        </table>
+        </div>
+    </section>
+
+    <script src="./assest/todolist.js"></script>
+    <script> src="" </script>
+</body>
+</html>
